@@ -8,7 +8,7 @@ properties.
 To run, simply right-click on `SimpleTest.helloTest` from the `src/test/java/` directory within Intellij and click Run.
 You can also create a Run Configuration to execute easily using different parameters.
 
-#Troubleshooting
+# Troubleshooting
 The test should load the xml files stored in `src/main/resources/Data/` directory and print them to the console. If the test does not run correctly, please check the dependencies in the `pom.xml` file.
 
 #Todo
