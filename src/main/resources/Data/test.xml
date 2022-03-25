@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<class>
+    <student>
+        <id>101</id>
+        <firstname>Test</firstname>
+        <lastname>Student</lastname>
+        <subject>Math</subject>
+        <marks>83</marks>
+    </student>
+
+    <student>
+        <id>102</id>
+        <firstname>Test2</firstname>
+        <lastname>Student2</lastname>
+        <subject>Chemistry</subject>
+        <marks>60</marks>
+    </student>
+
+    <student>
+        <id>103</id>
+        <firstname>Test3</firstname>
+        <lastname>Student3</lastname>
+        <subject>English</subject>
+        <marks>70</marks>
+    </student>
+
+    <student>
+        <id>104</id>
+        <firstname>Test4</firstname>
+        <lastname>Student4</lastname>
+        <subject>Physics</subject>
+        <marks>76</marks>
+    </student>
+
+</class>
