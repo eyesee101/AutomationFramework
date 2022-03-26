@@ -1,3 +1,6 @@
+import DataMapping.Class;
+import com.sun.org.glassfish.gmbal.Description;
+import io.qameta.allure.Step;
 import org.testng.annotations.*;
 
 public class SimpleTest {
@@ -26,10 +29,22 @@ public class SimpleTest {
 
     }
 
-    @Test (dataProvider="data-provider")
+    @Test (dataProvider="data-provider", description = "Validate input against output from system")
     public void helloTest(String dataValue) {
         System.out.println("Parsing file: " + dataValue);
+        //printRawFile(dataValue);
+        printFormattedFile(dataValue);
+    }
+
+    @Step ("Print out raw {0} file")
+    public void printRawFile(String dataValue){
         Helper.printFile(dataPath + dataValue);
+    }
+
+    @Step ("Print out formatted {0} file")
+    public void printFormattedFile(String dataValue){
+        Class c = XMLHelper.parseXMLFileToClassObject(dataPath + dataValue);
+        Helper.printClassObject(c);
     }
 
 }

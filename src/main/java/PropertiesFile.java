@@ -14,9 +14,9 @@ public class PropertiesFile {
             InputStream input = new FileInputStream(projectPath + "/src/main/resources/config.properties");
             prop.load(input);
 
-        } catch (Exception exp) {
-            System.out.println(exp.getMessage());
-            exp.printStackTrace();
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+            e.printStackTrace();
         }
     }
 
@@ -25,9 +25,9 @@ public class PropertiesFile {
             OutputStream output = new FileOutputStream(projectPath + "/src/test/java/test/config.properties");
             prop.setProperty(property, value);
             prop.store(output, "setting " + value + " to " + property);
-        } catch (Exception exp) {
-            System.out.println(exp.getMessage());
-            exp.printStackTrace();
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+            e.printStackTrace();
         }
     }
 }
