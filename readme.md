@@ -41,5 +41,4 @@ allure serve D:\Projects\AutomationFramework\allure-results
 - Comparison logic (simple a field == b field)
 - Jenkins Integration
 - API calls using RestAssured
-- XML Parsing
 - Set up running from the command line
